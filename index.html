@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en-US"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Sports List</title><link rel="dns-prefetch" href="//fonts.googleapis.com"><link rel="dns-prefetch" href="//s.w.org"><link rel="stylesheet" id="wp-block-library-css" href="http://example.com/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all"><link rel="stylesheet" id="menu-image-css" href="http://example.com/wp-content/plugins/menu-image/menu-image.css" type="text/css" media="all"><link rel="stylesheet" id="eight-sec-google-fonts-css" href="//fonts.googleapis.com/css?family=Open+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700italic%2C700%2C800%2C800italic%7COswald%3A400%2C300%2C700%7CRaleway%3A400%2C300%2C300italic%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800italic%2C800%2C900%2C900italic&ver=5.0.3" type="text/css" media="all"><link rel="stylesheet" id="bxslider-css-css" href="http://example.com/wp-content/themes/eight-sec/css/jquery.bxslider.css" type="text/css" media="all"><link rel="stylesheet" id="awesomse-font-css-css" href="http://example.com/wp-content/themes/eight-sec/css/font-awesome.css" type="text/css" media="all"><link rel="stylesheet" id="animate-css-css" href="http://example.com/wp-content/themes/eight-sec/css/animate.css" type="text/css" media="all"><link rel="stylesheet" id="isotope-css-css" href="http://example.com/wp-content/themes/eight-sec/css/isotope-docs.css" type="text/css" media="all"><link rel="stylesheet" id="eight-sec-style-css" href="http://example.com/wp-content/themes/eight-sec/style.css" type="text/css" media="all"><link rel="stylesheet" id="eight-sec-responsive-css-css" href="http://example.com/wp-content/themes/eight-sec/css/responsive.css" type="text/css" media="all"><script type="text/javascript" src="http://example.com/wp-includes/js/jquery/jquery.js"></script><script type="text/javascript" src="http://example.com/wp-includes/js/jquery/jquery-migrate.min.js"></script><style type="text/css" media="all">.site-header.fixed { background: url("http://8degreethemes.com/demo/eight-sec/wp-content/uploads/2016/05/logo.png") no-repeat scroll left top; background-size: cover; }
+.site-header.fixed .header-sticky-overlay:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.4);
+            z-index: -1;
+        }</style><script type="text/javascript">
+            jQuery(document).ready(function($){ 
+                smoothScroll.init();
+            });
+        </script><script> 
+
+                    jQuery(document).ready(function($){ 
+                        $('.home #content section:not(:first)').removeClass('section');
+                        $( '#primary-menu > .menu-item' ).each(function(){
+                            var c = $(this).children('a').attr('href');
+                            if(c!='#'){
+                                var arr = c.split('#');
+                                var section = arr[1];
+                                $(this).addClass(section);
+                                $('.home #content #'+section).addClass("section");
+                            }
+                        });
+
+                        //menu active
+                        $('.menu .menu-item').each(function(){
+                            $(this).find('li:first').addClass('active');
+                        });
+                        // smooth scroll with active menu class in header
+                        $(window).scroll(function() {
+                            var windscroll = $(window).scrollTop();
+                            if (windscroll >= 100) {
+                                //$('nav').addClass('fixed');
+                                $('#content .section').each(function(i) {
+                                    if ($(this).position().top <= windscroll + 50 ) {
+                                        $('.menu > li.menu-item').removeClass('active');
+                                        var ids = $(this).attr('id');
+                                        $('.menu > li.' + ids).addClass('active');
+                                    }
+                                });
+
+                            } 
+                            else {
+                                $('.home .menu > li.menu-item').removeClass('active');
+                                $('.home .menu > li.menu-item:first').addClass('active');
+                            }
+                        }).scroll();
+                        
+                    });
+                </script><style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><style type="text/css">
+				.site-title,
+			.site-description {
+				position: absolute;
+				clip: rect(1px, 1px, 1px, 1px);
+			}
+		</style><style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #efefef; }
+</style><link rel="icon" href="http://example.com/wp-content/uploads/cropped-sports_list-32x32.png" sizes="32x32"><link rel="icon" href="http://example.com/wp-content/uploads/cropped-sports_list-192x192.png" sizes="192x192"><link rel="apple-touch-icon-precomposed" href="http://example.com/wp-content/uploads/cropped-sports_list-180x180.png"><meta name="msapplication-TileImage" content="http://example.com/wp-content/uploads/cropped-sports_list-270x270.png"></head><body class="home page-template page-template-tpl-home page-template-tpl-home-php page page-id-5174 custom-background wp-custom-logo fullwidth-layout no-slider">
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+		<header id="masthead" class="site-header logo-left" role="banner"><div class="site-branding">
+							<div class="site-logo">
+											<a href="http://example.com/" rel="home">
+							</a><a href="http://example.com/" class="custom-logo-link" rel="home" itemprop="url"><img width="150" height="44" src="http://example.com/wp-content/uploads/cropped-sports_list-1.png" class="custom-logo" alt="Sports List" itemprop="logo"></a>						
+									</div>
+						<div class="site-text">
+				<a href="http://example.com/" rel="home">
+					<h1 class="site-title">Sports List</h1>
+					<p class="site-description"></p>
+				</a>
+			</div>
+		</div>
+		
+		
+		<nav id="site-navigation" class="main-navigation menu-right" role="navigation"><div class="toggle-btn">
+				<span class="toggle-bar toggle-bar1"></span>
+				<span class="toggle-bar toggle-bar2"></span>
+				<span class="toggle-bar toggle-bar3"></span>
+			</div>
+								<div class="menu-sportsnav-container"><ul id="primary-menu" class="menu"><li id="menu-item-5154" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5154"><a href="http://example.com/explore-activities/" class="menu-image-title-after menu-image-not-hovered"><img width="24" height="24" src="http://example.com/wp-content/uploads/grid-white.png" class="menu-image menu-image-title-after" alt=""><span class="menu-image-title">Explore Activities</span></a></li>
+</ul></div>				</nav><div class="ed-search-wrap">                                   
+            	<div class="search-icon">
+    <i class="fa fa-search"></i>
+    <div class="ed-search">
+    <div class="search-close"><i class="fa fa-close"></i></div>
+     <form action="http://example.com/" class="search-form" method="get" role="search">
+        <label>
+            <span class="screen-reader-text">Search for:</span>
+            <input type="search" title="Search for:" name="s" value="" placeholder="Search..." class="search-field"></label>
+        <input type="submit" value="Search" class="search-submit"></form> 
+    </div>
+</div>			</div>
+		        <div class="header-sticky-overlay"></div>
+	</header><div id="content" class="site-content">
+
+
+
+		<section id="header" class="eight_sec_plx_about_section section"><div class="ed-container">
+									<div class="section-title">
+						<h2 class="about-sec wow fadeIn" data-wow-duration="2s">Get active with the best local sports leagues</h2>
+					</div>
+					<div class="about-description wow fadeInDown" data-wow-duration="2s">
+						
+<p></p>
+
+
+
+<div class="wp-block-columns has-2-columns">
+<div class="wp-block-column">
+<p>Find and sign up for the best sports leagues, drop-in classes, camps and clinics in your neighborhood. It’s free to sign up!</p>
+</div>
+
+
+
+<div class="wp-block-column"><script>(function() {
+	if (!window.mc4wp) {
+		window.mc4wp = {
+			listeners: [],
+			forms    : {
+				on: function (event, callback) {
+					window.mc4wp.listeners.push({
+						event   : event,
+						callback: callback
+					});
+				}
+			}
+		}
+	}
+})();
+</script><form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-5251" method="post" data-id="5251" data-name="Signup"><div class="mc4wp-form-fields"><div style="text-align: left !important">
+  <p>
+      <label>Full Name: </label>
+      <input type="text" name="NAME" placeholder="First Last" required></p>
+	<br><p>
+      <label>Email address: </label>
+      <input type="email" name="EMAIL" placeholder="Your email address" required></p>
+	<br><p>
+      <label>Why are you interested in Surface 1 Sports?</label>
+      <select name="USER_TYPE" required><option>I'm an Athlete</option><option>I'm a Merchant</option></select></p>
+	<br><p>
+      <label>Region: </label>
+      <select name="REGION" required><option>Bronx</option><option>Brooklyn</option><option>Long Island</option><option>Manhattan</option><option>Queens</option><option>Staten Island</option></select></p>
+	<br><p>
+    <label>Tell us more about yourself!</label><br><input type="textarea" name="MORE_INFO" style="height: 5em; width: 80%;"></p>
+  <br><p>
+      <label>
+      <input name="NEWSLETTER" type="checkbox" value="1">I would like to receive monthly emails about Surface 1 Sports offerings.</label>
+  </p>
+	<br><p>
+      <input type="submit" value="Sign up"></p>
+</div></div><label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off"></label><input type="hidden" name="_mc4wp_timestamp" value="1550262344"><input type="hidden" name="_mc4wp_form_id" value="5251"><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1"><div class="mc4wp-response"></div></form>
+</div>
+</div>
+					</div>
+									<div class="about-service clear wow fadeInUp" data-wow-duration="2s">
+											</div>
+								</div>
+		</section><section id="portfolio" class="eight_sec_plx_portfolio_section section"><div class="ed-container">
+											<div class="section-title">
+							<h2 class="portfolio-sec wow fadeIn" data-wow-duration="6s">Find the right league for you</h2>
+						</div>					
+												<div class="portfolio-description wow fadeInDown" data-wow-duration="2s">
+						
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+
+<div class="wp-block-button aligncenter is-style-outline"><a class="wp-block-button__link has-text-color has-very-light-gray-color" href="Learn%20More">Learn More</a></div>
+</div>
+									</div>
+			</section><section id="team" class="eight_sec_plx_team_section section"><div class="ed-container">
+											<div class="section-title">
+							<h2 class="team-sec wow fadeIn" data-wow-duration="6s"></h2>
+						</div>
+												<div class="team-description wow fadeInDown" data-wow-duration="2s">
+						
+<div class="wp-block-media-text alignwide"><figure class="wp-block-media-text__media"><img src="http://example.com/wp-content/uploads/friends.png" alt="" class="wp-image-5205" srcset="http://example.com/wp-content/uploads/friends.png 521w, http://example.com/wp-content/uploads/friends-300x271.png 300w" sizes="(max-width: 521px) 100vw, 521px"></figure><div class="wp-block-media-text__content">
+<h1>Or find a friend to play with</h1>
+
+
+
+<p>Our system can help you find other locals who are looking for et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div></div>
+
+
+
+<p></p>
+</div>
+									</div>
+			</section></div>
+
+<footer id="colophon" class="site-footer" role="contentinfo"><div class="top-footer wow fadeInUp" data-wow-duration="2s">
+			<div class="ed-container">
+				<div class="footer-wrap clear">
+											<div class="footer-block" style="width: 60%">
+							<aside id="custom_html-3" class="widget_text widget widget_custom_html"><h2 class="widget-title">Sports List</h2><div class="textwidget custom-html-widget"><a href="#" style="margin-right: 30px;">Home</a>
+<a href="#" style="margin-right: 30px;">About Us</a>
+
+<a href="#" style="margin-right: 30px;">Contact Us</a>
+</div></aside></div>
+							        	
+											<div class="footer-block">
+							<aside id="custom_html-5" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div>
+	Copyright © 2019 Sports List<br></div></div></aside></div>
+							        	
+						        	
+						
+				</div>
+			</div>
+		</div>
+		<div class="site-info wow fadeInUp" data-wow-duration="2s">
+		<div class="copyright">
+						<span>
+						</span>
+					WordPress Theme : <a title="Free WordPress Theme" href="https://8degreethemes.com/wordpress-themes/eight-sec/">Eight Sec </a>
+		<span> by 8Degree Themes</span>
+		</div>
+				<div class="ed-social-icon">
+			    <div class="social-icons ">
+                <a href="#" class="facebook" data-title="Facebook" target="_blank"><i class="fa fa-facebook"></i><span></span></a>
+        
+                <a href="#" class="twitter" data-title="Twitter" target="_blank"><i class="fa fa-twitter"></i><span></span></a>
+        
+                <a href="#" class="gplus" data-title="Google Plus" target="_blank"><i class="fa fa-google-plus"></i><span></span></a>
+        
+                <a href="#" class="youtube" data-title="Youtube" target="_blank"><i class="fa fa-youtube"></i><span></span></a>
+        
+        
+        
+        
+        
+        
+                
+        
+        
+        
+                
+            </div>
+    		</div>
+			</div>
+</footer></div>
+<a href="#" id="go-to-top" title="Go to top">⇧</a>
+<script>(function() {function addEventListener(element,event,handler) {
+	if(element.addEventListener) {
+		element.addEventListener(event,handler, false);
+	} else if(element.attachEvent){
+		element.attachEvent('on'+event,handler);
+	}
+}function maybePrefixUrlField() {
+	if(this.value.trim() !== '' && this.value.indexOf('http') !== 0) {
+		this.value = "http://" + this.value;
+	}
+}
+
+var urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]');
+if( urlFields && urlFields.length > 0 ) {
+	for( var j=0; j < urlFields.length; j++ ) {
+		addEventListener(urlFields[j],'blur',maybePrefixUrlField);
+	}
+}/* test if browser supports date fields */
+var testInput = document.createElement('input');
+testInput.setAttribute('type', 'date');
+if( testInput.type !== 'date') {
+
+	/* add placeholder & pattern to all date fields */
+	var dateFields = document.querySelectorAll('.mc4wp-form input[type="date"]');
+	for(var i=0; i<dateFields.length; i++) {
+		if(!dateFields[i].placeholder) {
+			dateFields[i].placeholder = 'YYYY-MM-DD';
+		}
+		if(!dateFields[i].pattern) {
+			dateFields[i].pattern = '[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])';
+		}
+	}
+}
+
+})();</script><script type="text/javascript" src="http://example.com/wp-content/themes/eight-sec/js/jquery.bxslider.js"></script><script type="text/javascript" src="http://example.com/wp-content/themes/eight-sec/js/smooth-scroll.js"></script><script type="text/javascript" src="http://example.com/wp-content/themes/eight-sec/js/wow.js"></script><script type="text/javascript" src="http://example.com/wp-content/themes/eight-sec/js/isotope.pkgd.js"></script><script type="text/javascript" src="http://example.com/wp-content/themes/eight-sec/js/navigation.js"></script><script type="text/javascript" src="http://example.com/wp-content/themes/eight-sec/js/skip-link-focus-fix.js"></script><script type="text/javascript" src="http://example.com/wp-includes/js/imagesloaded.min.js"></script><script type="text/javascript" src="http://example.com/wp-content/themes/eight-sec/js/custom.js"></script><script type="text/javascript">
+/* <![CDATA[ */
+var mc4wp_forms_config = [];
+/* ]]> */
+</script><script type="text/javascript" src="http://example.com/wp-content/plugins/mailchimp-for-wp/assets/js/forms-api.min.js"></script></body></html>

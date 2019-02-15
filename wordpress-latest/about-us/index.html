@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-US"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Wanna know about us? – Sports List</title><link rel="dns-prefetch" href="//fonts.googleapis.com"><link rel="dns-prefetch" href="//s.w.org"><link rel="stylesheet" id="wp-block-library-css" href="http://example.com/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all"><link rel="stylesheet" id="menu-image-css" href="http://example.com/wp-content/plugins/menu-image/menu-image.css" type="text/css" media="all"><link rel="stylesheet" id="eight-sec-google-fonts-css" href="//fonts.googleapis.com/css?family=Open+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700italic%2C700%2C800%2C800italic%7COswald%3A400%2C300%2C700%7CRaleway%3A400%2C300%2C300italic%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800italic%2C800%2C900%2C900italic&ver=5.0.3" type="text/css" media="all"><link rel="stylesheet" id="bxslider-css-css" href="http://example.com/wp-content/themes/eight-sec/css/jquery.bxslider.css" type="text/css" media="all"><link rel="stylesheet" id="awesomse-font-css-css" href="http://example.com/wp-content/themes/eight-sec/css/font-awesome.css" type="text/css" media="all"><link rel="stylesheet" id="animate-css-css" href="http://example.com/wp-content/themes/eight-sec/css/animate.css" type="text/css" media="all"><link rel="stylesheet" id="isotope-css-css" href="http://example.com/wp-content/themes/eight-sec/css/isotope-docs.css" type="text/css" media="all"><link rel="stylesheet" id="eight-sec-style-css" href="http://example.com/wp-content/themes/eight-sec/style.css" type="text/css" media="all"><link rel="stylesheet" id="eight-sec-responsive-css-css" href="http://example.com/wp-content/themes/eight-sec/css/responsive.css" type="text/css" media="all"><script type="text/javascript" src="http://example.com/wp-includes/js/jquery/jquery.js"></script><script type="text/javascript" src="http://example.com/wp-includes/js/jquery/jquery-migrate.min.js"></script><style type="text/css" media="all">.site-header.fixed { background: url("http://8degreethemes.com/demo/eight-sec/wp-content/uploads/2016/05/logo.png") no-repeat scroll left top; background-size: cover; }
+.site-header.fixed .header-sticky-overlay:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.4);
+            z-index: -1;
+        }</style><script> 
+
+                    jQuery(document).ready(function($){ 
+                        $('.home #content section:not(:first)').removeClass('section');
+                        $( '#primary-menu > .menu-item' ).each(function(){
+                            var c = $(this).children('a').attr('href');
+                            if(c!='#'){
+                                var arr = c.split('#');
+                                var section = arr[1];
+                                $(this).addClass(section);
+                                $('.home #content #'+section).addClass("section");
+                            }
+                        });
+
+                        //menu active
+                        $('.menu .menu-item').each(function(){
+                            $(this).find('li:first').addClass('active');
+                        });
+                        // smooth scroll with active menu class in header
+                        $(window).scroll(function() {
+                            var windscroll = $(window).scrollTop();
+                            if (windscroll >= 100) {
+                                //$('nav').addClass('fixed');
+                                $('#content .section').each(function(i) {
+                                    if ($(this).position().top <= windscroll + 50 ) {
+                                        $('.menu > li.menu-item').removeClass('active');
+                                        var ids = $(this).attr('id');
+                                        $('.menu > li.' + ids).addClass('active');
+                                    }
+                                });
+
+                            } 
+                            else {
+                                $('.home .menu > li.menu-item').removeClass('active');
+                                $('.home .menu > li.menu-item:first').addClass('active');
+                            }
+                        }).scroll();
+                        
+                    });
+                </script><style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><style type="text/css">
+				.site-title,
+			.site-description {
+				position: absolute;
+				clip: rect(1px, 1px, 1px, 1px);
+			}
+		</style><style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #efefef; }
+</style><link rel="icon" href="http://example.com/wp-content/uploads/cropped-sports_list-32x32.png" sizes="32x32"><link rel="icon" href="http://example.com/wp-content/uploads/cropped-sports_list-192x192.png" sizes="192x192"><link rel="apple-touch-icon-precomposed" href="http://example.com/wp-content/uploads/cropped-sports_list-180x180.png"><meta name="msapplication-TileImage" content="http://example.com/wp-content/uploads/cropped-sports_list-270x270.png"></head><body class="page-template-default page page-id-4 custom-background wp-custom-logo fullwidth-layout no-slider">
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+		<header id="masthead" class="site-header logo-left" role="banner"><div class="site-branding">
+							<div class="site-logo">
+											<a href="http://example.com/" rel="home">
+							</a><a href="http://example.com/" class="custom-logo-link" rel="home" itemprop="url"><img width="150" height="44" src="http://example.com/wp-content/uploads/cropped-sports_list-1.png" class="custom-logo" alt="Sports List" itemprop="logo"></a>						
+									</div>
+						<div class="site-text">
+				<a href="http://example.com/" rel="home">
+					<h1 class="site-title">Sports List</h1>
+					<p class="site-description"></p>
+				</a>
+			</div>
+		</div>
+		
+		
+		<nav id="site-navigation" class="main-navigation menu-right" role="navigation"><div class="toggle-btn">
+				<span class="toggle-bar toggle-bar1"></span>
+				<span class="toggle-bar toggle-bar2"></span>
+				<span class="toggle-bar toggle-bar3"></span>
+			</div>
+								<div class="menu-sportsnav-container"><ul id="primary-menu" class="menu"><li id="menu-item-5154" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5154"><a href="http://example.com/explore-activities/" class="menu-image-title-after menu-image-not-hovered"><img width="24" height="24" src="http://example.com/wp-content/uploads/grid-white.png" class="menu-image menu-image-title-after" alt=""><span class="menu-image-title">Explore Activities</span></a></li>
+</ul></div>				</nav><div class="ed-search-wrap">                                   
+            	<div class="search-icon">
+    <i class="fa fa-search"></i>
+    <div class="ed-search">
+    <div class="search-close"><i class="fa fa-close"></i></div>
+     <form action="http://example.com/" class="search-form" method="get" role="search">
+        <label>
+            <span class="screen-reader-text">Search for:</span>
+            <input type="search" title="Search for:" name="s" value="" placeholder="Search..." class="search-field"></label>
+        <input type="submit" value="Search" class="search-submit"></form> 
+    </div>
+</div>			</div>
+		        <div class="header-sticky-overlay"></div>
+	</header><div id="content" class="site-content">
+<div class="ed-container">
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main"><header class="page-header"><h1 class="page-title">Wanna know about us?</h1>				<div id="eight-sec-breadcrumbs"><div class="ed-container"><a href="http://example.com">Home</a> | <span class="current">Wanna know about us?</span></div></div>			</header><article id="post-4" class="post-4 page type-page status-publish has-post-thumbnail hentry"><figure><img width="1280" height="720" src="http://example.com/wp-content/uploads/spherical-ball-joint-746194_1280.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="http://example.com/wp-content/uploads/spherical-ball-joint-746194_1280.jpg 1280w, http://example.com/wp-content/uploads/spherical-ball-joint-746194_1280-300x169.jpg 300w, http://example.com/wp-content/uploads/spherical-ball-joint-746194_1280-768x432.jpg 768w, http://example.com/wp-content/uploads/spherical-ball-joint-746194_1280-1024x576.jpg 1024w" sizes="(max-width: 1280px) 100vw, 1280px"></figure><div class="entry-content">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	</div>
+	</article></main></div>
+
+	<div class="right-sidebar">
+		
+<aside id="secondary" class="widget-area" role="complementary"><aside id="calendar-10" class="widget widget_calendar"><h2 class="widget-title">Daily Post Archive</h2><div id="calendar_wrap" class="calendar_wrap"><table id="wp-calendar"><caption>February 2019</caption>
+	<thead><tr><th scope="col" title="Monday">M</th>
+		<th scope="col" title="Tuesday">T</th>
+		<th scope="col" title="Wednesday">W</th>
+		<th scope="col" title="Thursday">T</th>
+		<th scope="col" title="Friday">F</th>
+		<th scope="col" title="Saturday">S</th>
+		<th scope="col" title="Sunday">S</th>
+	</tr></thead><tfoot><tr><td colspan="3" id="prev"><a href="http://example.com/2016/05/">« May</a></td>
+		<td class="pad"> </td>
+		<td colspan="3" id="next" class="pad"> </td>
+	</tr></tfoot><tbody><tr><td colspan="4" class="pad"> </td><td>1</td><td>2</td><td>3</td>
+	</tr><tr><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td>
+	</tr><tr><td>11</td><td>12</td><td>13</td><td>14</td><td id="today">15</td><td>16</td><td>17</td>
+	</tr><tr><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td>
+	</tr><tr><td>25</td><td>26</td><td>27</td><td>28</td>
+		<td class="pad" colspan="3"> </td>
+	</tr></tbody></table></div></aside><aside id="tag_cloud-7" class="widget widget_tag_cloud"><h2 class="widget-title">Post Tags</h2><div class="tagcloud"><a href="http://example.com/tag/books/" class="tag-cloud-link tag-link-21 tag-link-position-1" style="font-size: 8pt;" aria-label="books (1 item)">books</a>
+<a href="http://example.com/tag/design/" class="tag-cloud-link tag-link-84 tag-link-position-2" style="font-size: 22pt;" aria-label="design (5 items)">design</a>
+<a href="http://example.com/tag/design-de/" class="tag-cloud-link tag-link-252 tag-link-position-3" style="font-size: 8pt;" aria-label="design (1 item)">design</a>
+<a href="http://example.com/tag/language/" class="tag-cloud-link tag-link-22 tag-link-position-4" style="font-size: 8pt;" aria-label="language (1 item)">language</a>
+<a href="http://example.com/tag/page-builder/" class="tag-cloud-link tag-link-86 tag-link-position-5" style="font-size: 8pt;" aria-label="page builder (1 item)">page builder</a>
+<a href="http://example.com/tag/text/" class="tag-cloud-link tag-link-88 tag-link-position-6" style="font-size: 8pt;" aria-label="text (1 item)">text</a>
+<a href="http://example.com/tag/theme-video-tutorials/" class="tag-cloud-link tag-link-94 tag-link-position-7" style="font-size: 8pt;" aria-label="theme video tutorials (1 item)">theme video tutorials</a>
+<a href="http://example.com/tag/web-development/" class="tag-cloud-link tag-link-87 tag-link-position-8" style="font-size: 8pt;" aria-label="web development (1 item)">web development</a>
+<a href="http://example.com/tag/web-entwicklung/" class="tag-cloud-link tag-link-250 tag-link-position-9" style="font-size: 8pt;" aria-label="Web Entwicklung (1 item)">Web Entwicklung</a>
+<a href="http://example.com/tag/wordpress/" class="tag-cloud-link tag-link-85 tag-link-position-10" style="font-size: 16.75pt;" aria-label="wordpress (3 items)">wordpress</a></div>
+</aside><aside id="categories-8" class="widget widget_categories"><h2 class="widget-title">Categories</h2>		<ul><li class="cat-item cat-item-365"><a href="http://example.com/category/blogs/">Blogs</a>
+</li>
+	<li class="cat-item cat-item-374"><a href="http://example.com/category/portfolio/photography/">photography</a>
+</li>
+	<li class="cat-item cat-item-366"><a href="http://example.com/category/portfolio/">Portfolio</a>
+</li>
+	<li class="cat-item cat-item-248"><a href="http://example.com/category/programmierung/">Programmierung</a>
+</li>
+	<li class="cat-item cat-item-80"><a href="http://example.com/category/programming/">Programming</a>
+</li>
+	<li class="cat-item cat-item-251"><a href="http://example.com/category/seo-de/">SEO</a>
+</li>
+	<li class="cat-item cat-item-368"><a href="http://example.com/category/services/">services</a>
+</li>
+	<li class="cat-item cat-item-369"><a href="http://example.com/category/slider/">Slider</a>
+</li>
+	<li class="cat-item cat-item-370"><a href="http://example.com/category/team/">Team</a>
+</li>
+	<li class="cat-item cat-item-371"><a href="http://example.com/category/portfolio/technician/">Technician</a>
+</li>
+	<li class="cat-item cat-item-372"><a href="http://example.com/category/portfolio/technology/">Technology</a>
+</li>
+	<li class="cat-item cat-item-373"><a href="http://example.com/category/testimonial/">Testimonial</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://example.com/category/uncategorized/">Uncategorized</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="http://example.com/category/webdevelop/">Web Development</a>
+</li>
+	<li class="cat-item cat-item-249"><a href="http://example.com/category/web-design/">Web-Design</a>
+</li>
+	<li class="cat-item cat-item-79"><a href="http://example.com/category/webdesign/">Webdesign</a>
+</li>
+	<li class="cat-item cat-item-81"><a href="http://example.com/category/wordpress-theme/">Wordpress Theme</a>
+</li>
+	<li class="cat-item cat-item-255"><a href="http://example.com/category/wordpress-theme-de/">Wordpress Theme</a>
+</li>
+		</ul></aside><aside id="categories-10" class="widget widget_categories"><h2 class="widget-title">Choose a location</h2><form action="http://example.com" method="get"><label class="screen-reader-text" for="cat">Choose a location</label><select name="cat" id="cat" class="postform"><option value="-1">Select Category</option><option class="level-0" value="365">Blogs</option><option class="level-0" value="374">photography</option><option class="level-0" value="366">Portfolio</option><option class="level-0" value="248">Programmierung</option><option class="level-0" value="80">Programming</option><option class="level-0" value="251">SEO</option><option class="level-0" value="368">services</option><option class="level-0" value="369">Slider</option><option class="level-0" value="370">Team</option><option class="level-0" value="371">Technician</option><option class="level-0" value="372">Technology</option><option class="level-0" value="373">Testimonial</option><option class="level-0" value="1">Uncategorized</option><option class="level-0" value="18">Web Development</option><option class="level-0" value="249">Web-Design</option><option class="level-0" value="79">Webdesign</option><option class="level-0" value="81">Wordpress Theme</option><option class="level-0" value="255">Wordpress Theme</option></select></form>
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "cat" );
+	function onCatChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value > 0 ) {
+			dropdown.parentNode.submit();
+		}
+	}
+	dropdown.onchange = onCatChange;
+})();
+/* ]]> */
+</script></aside><aside id="search-13" class="widget widget_search"><div class="search-icon">
+    <i class="fa fa-search"></i>
+    <div class="ed-search">
+    <div class="search-close"><i class="fa fa-close"></i></div>
+     <form action="http://example.com/" class="search-form" method="get" role="search">
+        <label>
+            <span class="screen-reader-text">Search for:</span>
+            <input type="search" title="Search for:" name="s" value="" placeholder="Search..." class="search-field"></label>
+        <input type="submit" value="Search" class="search-submit"></form> 
+    </div>
+</div></aside><aside id="recent-posts-7" class="widget widget_recent_entries"><h2 class="widget-title">Recent Posts</h2>		<ul><li>
+					<a href="http://example.com/build-your-own-website-easily/">Build your own website</a>
+									</li>
+											<li>
+					<a href="http://example.com/rayan-maclarenceo-apple-inc/">Rayan maclarenCEO, Apple inc</a>
+									</li>
+											<li>
+					<a href="http://example.com/nulla-faucibusceo-apple-inc/">Nulla faucibusCEO, Apple inc</a>
+									</li>
+											<li>
+					<a href="http://example.com/programming/">WORDPRESS</a>
+									</li>
+											<li>
+					<a href="http://example.com/analytics/">DESIGN</a>
+									</li>
+					</ul></aside><aside id="recent-comments-6" class="widget widget_recent_comments"><h2 class="widget-title">Recent Comments</h2><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">admin</span> on <a href="http://example.com/blog-post-example/#comment-533">Blog post example</a></li><li class="recentcomments"><span class="comment-author-link">admin</span> on <a href="http://example.com/fashion-shoes-black-friday/#comment-530">Fashion Shoes – Black Friday</a></li><li class="recentcomments"><span class="comment-author-link">AccessAdmin</span> on <a href="http://example.com/proin-accumsan-vitae/#comment-551">Proin accumsan vitae</a></li><li class="recentcomments"><span class="comment-author-link"><a href="https://wordpress.org/" rel="external nofollow" class="url">Mr WordPress</a></span> on <a href="http://example.com/hello-world/#comment-541">Hello world!</a></li><li class="recentcomments"><span class="comment-author-link">admin</span> on <a href="http://example.com/focus-on-creativity/#comment-6">Focus on free and creative presentations</a></li></ul></aside><aside id="archives-1" class="widget widget_archive"><h2 class="widget-title">Archives</h2>		<ul><li><a href="http://example.com/2016/05/">May 2016</a></li>
+	<li><a href="http://example.com/2016/04/">April 2016</a></li>
+	<li><a href="http://example.com/2016/03/">March 2016</a></li>
+	<li><a href="http://example.com/2016/02/">February 2016</a></li>
+	<li><a href="http://example.com/2016/01/">January 2016</a></li>
+	<li><a href="http://example.com/2015/08/">August 2015</a></li>
+		</ul></aside></aside></div>
+	</div>
+
+</div>
+
+<footer id="colophon" class="site-footer" role="contentinfo"><div class="top-footer wow fadeInUp" data-wow-duration="2s">
+			<div class="ed-container">
+				<div class="footer-wrap clear">
+											<div class="footer-block" style="width: 60%">
+							<aside id="custom_html-3" class="widget_text widget widget_custom_html"><h2 class="widget-title">Sports List</h2><div class="textwidget custom-html-widget"><a href="#" style="margin-right: 30px;">Home</a>
+<a href="#" style="margin-right: 30px;">About Us</a>
+
+<a href="#" style="margin-right: 30px;">Contact Us</a>
+</div></aside></div>
+							        	
+											<div class="footer-block">
+							<aside id="custom_html-5" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div>
+	Copyright © 2019 Sports List<br></div></div></aside></div>
+							        	
+						        	
+						
+				</div>
+			</div>
+		</div>
+		<div class="site-info wow fadeInUp" data-wow-duration="2s">
+		<div class="copyright">
+						<span>
+						</span>
+					WordPress Theme : <a title="Free WordPress Theme" href="https://8degreethemes.com/wordpress-themes/eight-sec/">Eight Sec </a>
+		<span> by 8Degree Themes</span>
+		</div>
+				<div class="ed-social-icon">
+			    <div class="social-icons ">
+                <a href="#" class="facebook" data-title="Facebook" target="_blank"><i class="fa fa-facebook"></i><span></span></a>
+        
+                <a href="#" class="twitter" data-title="Twitter" target="_blank"><i class="fa fa-twitter"></i><span></span></a>
+        
+                <a href="#" class="gplus" data-title="Google Plus" target="_blank"><i class="fa fa-google-plus"></i><span></span></a>
+        
+                <a href="#" class="youtube" data-title="Youtube" target="_blank"><i class="fa fa-youtube"></i><span></span></a>
+        
+        
+        
+        
+        
+        
+                
+        
+        
+        
+                
+            </div>
+    		</div>
+			</div>
+</footer></div>
+<a href="#" id="go-to-top" title="Go to top">⇧</a>
+<script type="text/javascript" src="http://example.com/wp-content/themes/eight-sec/js/jquery.bxslider.js"></script><script type="text/javascript" src="http://example.com/wp-content/themes/eight-sec/js/smooth-scroll.js"></script><script type="text/javascript" src="http://example.com/wp-content/themes/eight-sec/js/wow.js"></script><script type="text/javascript" src="http://example.com/wp-content/themes/eight-sec/js/isotope.pkgd.js"></script><script type="text/javascript" src="http://example.com/wp-content/themes/eight-sec/js/navigation.js"></script><script type="text/javascript" src="http://example.com/wp-content/themes/eight-sec/js/skip-link-focus-fix.js"></script><script type="text/javascript" src="http://example.com/wp-includes/js/imagesloaded.min.js"></script><script type="text/javascript" src="http://example.com/wp-content/themes/eight-sec/js/custom.js"></script></body></html>
